@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            grid-gap: 10px;
+            padding: 20px;
+            background-color: #d8dadd;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .mess {
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        .inf
+        {
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        .time {
+            font-size: 12px;
+            color: gray;
+        }
+        .Name {
+            font-weight: 100;
+        }
+
+        .mess-4el {
+            background: rgb(236, 136, 236);
+            border-radius: 20px 20px 20px 0px;
+        }
+
+        .mess-me {
+            background: rgb(112, 145, 238);
+            border-radius: 20px 20px 0px 20px;
+        }
+
+        .inf-4el
+        {
+            grid-template-columns: auto min-content;
+            justify-self: flex-end;
+        }
+        .inf-4el .Name 
+        {        
+             align-self: flex-end; 
+             justify-self: flex-end; 
+             grid-row: 1/1;
+        }
+        .inf-4el .time 
+        {
+            grid-row: 2/3;
+            align-self: flex-start;
+            text-align: right;
+        }
+       .inf-4el img 
+        {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+
+        .inf-me  
+        {
+            grid-template-columns: min-content auto;
+        }
+        .inf-me .Name 
+        {
+            align-self: flex-end;  
+             grid-row: 1/1;
+        }
+        .inf-me .time 
+        { 
+            align-self: flex-start;  
+            grid-row: 2/3;
+        }
+        .inf-me img 
+        {
+            grid-column: 1/1;
+            grid-row: 1/3;
+        }
+
+        .empty-4el
+        {
+            grid-column: 2/3;
+        }
+
+        .empty-me
+        {
+            grid-column: 1/1;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="inf inf-4el">   
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+        <div class="mess mess-4el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, amet!</div>
+        <div class="empty-4el"></div>
+
+        <div class="empty-me"></div>  
+        <div class="mess mess-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit?</div>
+        <div class="inf inf-me ">
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+      <div class="inf inf-4el">   
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+        <div class="mess mess-4el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, amet!</div>
+        <div class="empty-4el"></div>
+        
+        <div class="empty-me"></div>  
+        <div class="mess mess-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit?</div>
+        <div class="inf inf-me ">
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+
+        <div class="inf inf-4el">   
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+        <div class="mess mess-4el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, amet!</div>
+        <div class="empty-4el"></div>
+        
+        <div class="empty-me"></div>  
+        <div class="mess mess-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit?</div>
+        <div class="inf inf-me ">
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+
+        <div class="inf inf-4el">   
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+        <div class="mess mess-4el">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, amet!</div>
+        <div class="empty-4el"></div>
+        
+        <div class="empty-me"></div>  
+        <div class="mess mess-me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, suscipit?</div>
+        <div class="inf inf-me ">
+            <p class="Name">Anie Smith</p>
+            <p class="time">4 hours ago</p> 
+            <img src="icons_hw_module_8_9/avatar_2.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
